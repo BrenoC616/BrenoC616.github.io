@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+<div align="center">
+  
+  ## Welcome to GitHub Pages
+  
+</div>
 
 You can use the [editor on GitHub](https://github.com/BrenoC616/BrenoC616.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
