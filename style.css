@@ -1,0 +1,34 @@
+:root {
+  --bg-color: #202024;
+  --title-color: #e0311b;
+  --paragraph-color: #e0491b;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin: auto 0;
+}
+
+.title {
+  font-size: 6rem;
+  color: var(--title-color);
+}
+
+.paragraph {
+  font-size: 2rem;
+  color: var(--paragraph-color);
+}
