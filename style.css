@@ -20,56 +20,40 @@ body {
 }
 
 .container {
-  margin: auto 20vw;
+  margin: auto max(6.2rem, 10vw);
 }
 
 .title {
-  font-size: 4rem;
+  font-size: max(4rem, 5vw);
   line-height: 3.5rem;
   color: var(--title-color);
   margin-bottom: 0.9rem;
 }
 
 .paragraph {
-  font-size: 1.2rem;
+  font-size: max(1.2rem, 1.85vw);
   font-weight: 600;
   color: var(--paragraph-color);
 }
 
 @media (min-width: 750px) {
-  .container {
-    margin: auto 10vw;
-  }
-
   .title {
-    font-size: 5.5rem;
     line-height: normal;
-    color: var(--title-color);
     margin-bottom: auto;
   }
 
   .paragraph {
-    font-size: 1.5rem;
     font-weight: normal;
-    color: var(--paragraph-color);
   }
 }
 
 @media (min-width: 1500px) {
-  .container {
-    margin: auto 0;
-  }
-
   .title {
-    font-size: 6rem;
     line-height: normal;
-    color: var(--title-color);
-    margin-bottom: auto;
+    margin-bottom: auto;  
   }
 
   .paragraph {
-    font-size: 2rem;
     font-weight: normal;
-    color: var(--paragraph-color);
   }
 }
