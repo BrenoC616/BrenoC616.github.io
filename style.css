@@ -5,6 +5,10 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +17,45 @@
 body {
   font-family: var(--font-mono);
   background-color: var(--bg-color);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
 }
 
 .container {
   margin: auto max(6.2rem, 10vw);
+}
+
+.greetings,
+.social-medias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.greetings {
+  margin-bottom: 4.5rem;
+}
+
+.white-space {
+  height: 4.5rem;
+  width: 100%;
+}
+
+.projects {
+  text-align: center;
+  position: relative;
+}
+
+.reset-position {
+  display: block;
+  position: static !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  margin-top: 4rem;
 }
 
 .title {
@@ -36,10 +71,108 @@ body {
   color: var(--paragraph-color);
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 3rem;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--paragraph-color);
+}
+
+.scroll-down > a:hover {
+  color: var(--title-color);
+  text-shadow: 0 0 20px var(--title-color);
+}
+
+.subtitle {
+  color: var(--paragraph-color);
+  text-align: left !important;
+}
+
+.social-medias,
+.projects {
+  margin: 2.5rem 0 0 0;
+  color: var(--paragraph-color);
+}
+
+.social-medias > ul,
+.projects > ul {
+  list-style: none;
+  margin: 0.8rem 0 0 0;
+}
+
+.social-media,
+.project {
+  padding: 0.3rem 0;
+}
+
+.social-media > a,
+.project > a,
+.scroll-down > a {
+  text-decoration: none;
+  color: var(--paragraph-color);
+  transition: 400ms;
+}
+
+.social-media > a:hover {
+  color: var(--title-color);
+  letter-spacing: 0.6rem;
+  transition: 400ms;
+}
+
+.projects > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.projects > a {
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  background-color: var(--paragraph-color);
+  color: var(--bg-color);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: 400ms;
+  margin: 0 auto;
+}
+
+.projects > a:hover,
+.projects > a:focus {
+  background-color: var(--title-color);
+  box-shadow: 0 0 10px 0 var(--title-color);
+  transition: 400ms;
+}
+
+.project {
+  background-color: #e0491b;
+  color: #202024;
+  padding: 1.1rem 1.5rem;
+  border-radius: 1rem;
+  width: auto;
+  text-align: left !important;
+}
+
+.project > img,
+.default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #e0491b;
+  height: 190px;
+  object-fit: cover;
+  background-color: var(--bg-color);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
 @media (min-width: 750px) {
   .title {
     line-height: normal;
-    margin-bottom: auto;
   }
 
   .paragraph {
@@ -47,13 +180,56 @@ body {
   }
 }
 
-@media (min-width: 1500px) {
-  .title {
-    line-height: normal;
-    margin-bottom: auto;  
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+    margin: 0;
   }
 
-  .paragraph {
-    font-weight: normal;
+  .greetings,
+  .social-medias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .project {
+    width: 40%;
+  }
+
+  .projects > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem 2.5rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .white-space {
+    height: 0;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  .projects > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .social-medias > ul {
+    display: flex;
+    gap: 2rem;
   }
 }

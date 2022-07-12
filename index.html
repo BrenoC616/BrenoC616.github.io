@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Página</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖</text></svg>"
-    />
+    <link rel="icon" href="./favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,10 +16,89 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Olá Mundo!</h1>
-      <p class="paragraph">
-        Sou Breno César, Desenvolvedor, Técnico de TI e futuro Técnico Agrícola
-      </p>
+      <div class="greetings">
+        <h1 class="title">Olá Mundo!</h1>
+        <p class="paragraph">
+          Sou Breno César, Desenvolvedor Web, Técnico de TI e futuro Técnico
+          Agrícola
+        </p>
+        <span class="scroll-down">
+          <a href="#projects">...</a>
+        </span>
+      </div>
+      <div class="white-space" id="projects"></div>
+      <div class="projects">
+        <h2 class="subtitle">Projetos</h2>
+        <ul>
+          <li class="project">
+            <h3>Wi-py</h3>
+            <img src="./imagem-1.png" alt="" />
+            <p>
+              Ferramenta em Python para adicionar e deletar dispositivos da rede
+              do Roteador D-Link DIR-610, através do endereço MAC
+            </p>
+          </li>
+          <li class="project">
+            <h3>TCC Backend</h3>
+            <div class="default">
+              <img src="" alt="Projeto de Backend para TCC" />
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident ipsa error maiores quam velit adipisci accusamus sequi dicta. 
+            </p>
+          </li>
+          <li class="project">
+            <h3>Projeto Estoque PHP</h3>
+            <div class="default">
+              <img src="" alt="Projeto de Estoque em PHP" />
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident ipsa error maiores quam velit adipisci accusamus sequi dicta.</p>
+          </li>
+          <li class="project">
+            <h3>API Brasileirão (Em desenvolvimento)</h3>
+            <div class="default">
+              <img src="" alt="Projeto de API do Campeonato Brasileiro" />
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident ipsa error maiores quam velit adipisci accusamus sequi dicta.</p>
+          </li>
+        </ul>
+        <a href="https://github.com/BrenoC616?tab=repositories" target="_blank"
+          >Ver mais...</a
+        >
+        <span class="reset-position scroll-down">
+          <a href="#social-medias">...</a>
+        </span>
+      </div>
+      <div class="social-medias" id="social-medias">
+        <h2 class="subtitle">Redes Sociais</h2>
+        <ul>
+          <li class="social-media">
+            <a href="https://br.linkedin.com/in/brenoc616" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="social-media">
+            <a href="https://instagram.com/brenoc616" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-media">
+            <a href="https://facebook.com/brenoc616" target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <li class="social-media">
+            <a href="https://youtube.com/brenoc616" target="_blank">Youtube</a>
+          </li>
+          <li class="social-media">
+            <a href="https://twitter.com/brenoc616" target="_blank">Twitter</a>
+          </li>
+          <li class="social-media">
+            <a href="https://g.dev/brenoc616" target="_blank"
+              >Google.Developers</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
